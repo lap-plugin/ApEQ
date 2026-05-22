@@ -4,7 +4,7 @@ Analog Professional EQ
 ## Overview
 
 ApEQ is a professional 5-band parametric equalizer with analog modeling,
-based on the legendary API 550A/B hardware units.
+based on the legendary API hardware units.
 
 ### Features
 
