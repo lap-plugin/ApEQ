@@ -16,21 +16,21 @@ DSP engine, **one build** with automatic SIMD selection based on the CPU.
 
 Shared features no GUI
 
-State Variable Filter (Shelf · Bell · Butterworth) with NaN protection
-Analog emulation — op-amp API 2520 model, gain-compensated
-Drive (0–100%) — continuous saturation, constant perceived loudness
-Oversampling 16× / 32× — polyphase FIR, anti-aliasing for the saturation
-stage, with a short crossfade on mode change to avoid clicks
-Runtime SIMD dispatch — AVX-512 → AVX2 → Scalar, selected automatically
-Continuous Q — smooth bandwidth control (narrow ↔ wide)
-Gain ±24 dB per band, smoothed (no zipper noise)
-Bandpass 80 Hz – 10 kHz (Butterworth HP + LP)
-CLAP , stereo (independent L/R)
+*State Variable Filter (Shelf · Bell · Butterworth) with NaN protection
+*Analog emulation — op-amp API 2520 model, gain-compensated
+*Drive (0–100%) — continuous saturation, constant perceived loudness
+*Oversampling 16× / 32× — polyphase FIR, anti-aliasing for the saturation
+*stage, with a short crossfade on mode change to avoid clicks
+*Runtime SIMD dispatch — AVX-512 → AVX2 → Scalar, selected automatically
+*Continuous Q — smooth bandwidth control (narrow ↔ wide)
+*Gain ±24 dB per band, smoothed (no zipper noise)
+*Bandpass 80 Hz – 10 kHz (Butterworth HP + LP)
+*CLAP , stereo (independent L/R)
 
-Note on oversampling: it is anti-aliasing, not an audible "effect". Its
-job is to keep the saturation clean at high drive — the better it works, the
-*less* you hear it. The difference is most measurable at high drive on
-harmonically rich material (e.g. saw leads).
+*Note on oversampling: it is anti-aliasing, not an audible "effect". Its
+*job is to keep the saturation clean at high drive — the better it works, the
+**less* you hear it. The difference is most measurable at high drive on
+*harmonically rich material (e.g. saw leads).
 
 
 Layout (Cargo workspace)
