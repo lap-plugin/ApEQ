@@ -1,7 +1,7 @@
 
 
 
-#  AMB - Analog Mastering Bundle v1.0
+#  AMB - Analog Mastering Bundle v1.0  no GUI
 
 **AMB - PE3  - 3 Band Parametric EQ
 **AMB - PE5  - 5 Band Parametric EQ
